@@ -19,7 +19,7 @@ internal class MenuService
             Console.WriteLine("3. View Specified Contact Details.");
             Console.WriteLine("4. Delete a Contact.");
             Console.WriteLine("5. Exit Application.");
-            Console.Write("\n    Enter A Menu Option: ");
+            Console.Write("\nEnter A Menu Option: ");
             var option = Console.ReadLine();
 
             switch(option)
