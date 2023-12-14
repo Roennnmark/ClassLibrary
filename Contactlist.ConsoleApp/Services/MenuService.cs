@@ -125,7 +125,7 @@ internal class MenuService
         var contactToRemove = Console.ReadLine()!;
 
         var contact = contacts.FirstOrDefault(x => x.Email == contactToRemove);
-        
+
         if (contact != null)
         {
             _contactService.DeleteContactFromList(contactToRemove);

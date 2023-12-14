@@ -61,16 +61,35 @@ public class ContactService : IContactService
     {
         try
         {
-            GetAllContactsFromList();
+            var contacts = GetAllContactsFromList();
             var contact = _contacts.FirstOrDefault(x => x.Email == email);
 
             if (contact != null)
             {
                 _contacts.Remove(contact);
+                SaveContactsToList(contacts);
+
             }
         }
         catch (Exception ex) { Debug.WriteLine("ContactService - DeleteContactFromList:: " + ex.Message); }
         return null!;
+    }
+
+    public void SaveContactsToList(IEnumerable<IContact> contacts)
+    {
+        try
+        {
+            string json = JsonConvert.SerializeObject(contacts, new JsonSerializerSettings { TypeNameHandling = TypeNameHandling.All });
+
+            var result = _fileService.SaveContentToFile(_filePath, json);
+
+            if (!result)
+            {
+                Debug.WriteLine("Failed to save contacts to file.");
+            }
+        }
+        catch (Exception ex) { Debug.WriteLine("ContactService - DeleteContactFromList:: " + ex.Message); }
+        
     }
 
 }
