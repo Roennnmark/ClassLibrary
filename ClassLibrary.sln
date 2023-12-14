@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34316.72
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contactlist.Shared", "Contactlist.Shared\Contactlist.Shared.csproj", "{5A36405C-4A11-4FC4-B79D-439DF0102D9F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contactlist.Shared", "Contactlist.Shared\Contactlist.Shared.csproj", "{5A36405C-4A11-4FC4-B79D-439DF0102D9F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contactlist.ConsoleApp", "Contactlist.ConsoleApp\Contactlist.ConsoleApp.csproj", "{DE9D0F71-94E5-4904-B46C-D7F4707A795C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contactlist.ConsoleApp", "Contactlist.ConsoleApp\Contactlist.ConsoleApp.csproj", "{DE9D0F71-94E5-4904-B46C-D7F4707A795C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contactlist.ConsoleApp.Tests", "Contactlist.ConsoleApp.Tests\Contactlist.ConsoleApp.Tests.csproj", "{C8971D61-6F56-4346-9737-811DFD266496}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{DE9D0F71-94E5-4904-B46C-D7F4707A795C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DE9D0F71-94E5-4904-B46C-D7F4707A795C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DE9D0F71-94E5-4904-B46C-D7F4707A795C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8971D61-6F56-4346-9737-811DFD266496}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8971D61-6F56-4346-9737-811DFD266496}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8971D61-6F56-4346-9737-811DFD266496}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8971D61-6F56-4346-9737-811DFD266496}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
