@@ -19,7 +19,7 @@ internal class MenuService
             Console.WriteLine("3. View Specified Contact Details.");
             Console.WriteLine("4. Delete a Contact.");
             Console.WriteLine("5. Exit Application.");
-            Console.Write("\nEnter A Menu Option: ");
+            Console.Write("\n    Enter A Menu Option: ");
             var option = Console.ReadLine();
 
             switch(option)
@@ -40,7 +40,7 @@ internal class MenuService
                     ShowExitAppOption();
                     break;
                 default: 
-                    Console.WriteLine("\nChoose a Menu option! ");
+                    Console.WriteLine("\n    Choose a Menu option! ");
                     break;
 
             }
@@ -112,7 +112,7 @@ internal class MenuService
         }
         else
         {
-            Console.WriteLine("Contact not found...");
+            Console.WriteLine("\n    Contact not found...");
         }
         Console.ReadKey();
     }
