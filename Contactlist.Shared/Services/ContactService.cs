@@ -27,7 +27,7 @@ public class ContactService : IContactService
         catch (Exception ex) { Debug.WriteLine("ContactService - AddContactToList:: " + ex.Message); }
         return false;
     }
-
+    
     public IEnumerable<IContact> GetAllContactsFromList()
     {
         try
