@@ -114,7 +114,6 @@ internal class MenuService
         {
             Console.WriteLine("\n    Contact not found...");
         }
-        Console.ReadKey();
     }
 
     public static void DeleteContactFromList()
